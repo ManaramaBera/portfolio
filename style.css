@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.left span {
+    color: #00c6ff;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #00c6ff;
+    border: none;
+    color: white;
+}
+
+button.dark {
+    background: gray;
+}
+
+/* CIRCLE */
+.circle {
+    width: 200px;
+    height: 200px;
+    border: 4px solid #00c6ff;
+    border-radius: 50%;
+}
+.left h1 {
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        color: white;
+    }
+    to {
+        color: #00c6ff;
+    }
+}
+.glow-text {
+    color: white;
+    font-size: 40px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        color: white;
+        text-shadow: 0 0 5px white;
+    }
+    100% {
+        color: #00c6ff;
+        text-shadow: 0 0 20px #00c6ff;
+    }
+}
